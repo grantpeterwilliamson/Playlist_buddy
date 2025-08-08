@@ -44,6 +44,9 @@ Add track(s) to the end			Added immediately via API (no refresh)
 Delete / Reorder			XML is copied → one Library.Refresh
 Simultaneous edits inside 5 sec		The playlist modified last wins (last-writer-wins)
 
+
+Currently Only supports music playlists but i think i can add suport for other libraries if anyone wants it.
+
 Edits during a library scan		
 					< 86% scanned → processed normally
 					≥ 86% → queued and applied after scan completes
