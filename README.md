@@ -133,7 +133,7 @@ In playlist_sync.json, configure each playlist pair like this:
 json
 Copy code
 
-{
+
   "pairs": [
     { "src": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\EXAMPLE\\playlist.xml",
       "dst": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\EXAMPLE1\\playlist.xml" },
@@ -144,8 +144,6 @@ Copy code
       "dst": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\CHANGE ME1\\playlist.xml" },
     { "src": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\CHANGE ME1\\playlist.xml",
       "dst": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\CHANGE ME\\playlist.xml" },
-  ]
-}
 
 
 You can sync multiple pairs at once. In theory, it should support syncing more than 2 users, but only two-way sync has been tested so far.
