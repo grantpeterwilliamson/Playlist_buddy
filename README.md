@@ -2,7 +2,9 @@ playlist-buddy
 Keep two (or more) Jellyfin playlists in perfect, two-way sync across different users.
 
 
-<img src="docs/diagram.png" width="450" alt="High-level flow" />
+<p align="center">
+  <img src="docs/diagram.png" width="450" alt="High-level flow" />
+</p>
 
 
 ✨ Features
