@@ -134,7 +134,6 @@ json
 Copy code
 
 {
-...
   "pairs": [
     { "src": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\EXAMPLE\\playlist.xml",
       "dst": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\EXAMPLE1\\playlist.xml" },
@@ -146,7 +145,6 @@ Copy code
     { "src": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\CHANGE ME1\\playlist.xml",
       "dst": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\CHANGE ME\\playlist.xml" },
   ]
-...
 }
 
 
