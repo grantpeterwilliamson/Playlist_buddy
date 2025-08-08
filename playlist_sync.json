@@ -1,0 +1,18 @@
+{
+  "jellyfin_url": "CHANGE ME",
+  "api_key": "CHANGE ME",
+  "poll_secs": 1,
+  "debounce_secs": 5,
+  
+  "pairs": [
+    { "src": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\EXAMPLE\\playlist.xml",
+      "dst": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\EXAMPLE1\\playlist.xml" },
+    { "src": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\EXAMPLE1\\playlist.xml",
+      "dst": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\EXAMPLE\\playlist.xml" },
+
+    { "src": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\CHANGE ME\\playlist.xml",
+      "dst": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\CHANGE ME1\\playlist.xml" },
+    { "src": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\CHANGE ME1\\playlist.xml",
+      "dst": "C:\\ProgramData\\Jellyfin\\Server\\data\\playlists\\CHANGE ME\\playlist.xml" },
+  ]
+}
