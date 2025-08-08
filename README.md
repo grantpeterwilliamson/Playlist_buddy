@@ -83,9 +83,8 @@ What `playlist-buddy` does is act as a behind-the-scenes syncer — watching and
 
 I can’t stress this enough:
 
-- ❗️ **DO NOT make changes to synced playlists from multiple devices at the same time**
-- ❗️ If deleting tracks, do it together, on one device, ideally in the same room
-
+- ❗️ **DO NOT have two users Delete or reorder from a playlist or multiple devices at the same time**
+- ❗️ If deleting tracks, do it together, on one device, ideally in the same room, use the time to compliment each others hair
 Additions are generally safe — but simultaneous **removals or reorders** can cause sync issues or data loss.
 
 ---
