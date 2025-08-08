@@ -110,3 +110,55 @@ python playlist_sync.py          # Ctrl-C to stop
 SET PLAYLIST_SYNC_DEBUG=1        # Windows
 export PLAYLIST_SYNC_DEBUG=1     # Linux/macOS
 python playlist_sync.py
+```
+
+---
+
+## 🔧 Next Steps & Tips
+
+### 🔑 1. Create an API Key
+
+- In Jellyfin, go to **Admin Panel → API Keys**
+- Create a new key and use it in `playlist_sync.json`
+
+---
+
+### 📝 2. Create the playlists ahead of time
+
+- You **must** create both playlists on both accounts **before running** the tool
+- Add at least **1 song to each** (preferably the same one)
+- You **can** use the same name for both playlists — Jellyfin keeps them in user-specific folders
+- The second playlist may appear as `Playlist Name (1)` — that’s normal and expected
+
+---
+
+### ⚙️ 3. Configure your sync pairs
+
+In `playlist_sync.json`, define pairs like this:
+
+```json
+"pairs": [
+  {
+    "src": "C:\ProgramData\Jellyfin\Server\data\playlists\EXAMPLE\playlist.xml",
+    "dst": "C:\ProgramData\Jellyfin\Server\data\playlists\EXAMPLE1\playlist.xml"
+  },
+  {
+    "src": "C:\ProgramData\Jellyfin\Server\data\playlists\EXAMPLE1\playlist.xml",
+    "dst": "C:\ProgramData\Jellyfin\Server\data\playlists\EXAMPLE\playlist.xml"
+  }
+]
+```
+
+> ✅ You can sync multiple pairs at once.  
+> ⚠️ Only **two-way sync** has been tested so far. More than two users **might** work, but is **not guaranteed**.
+
+---
+
+## 🧪 Platform & Compatibility Notes
+
+- ✅ Tested on **Windows 10/11**
+- 🐧 Should work on **Linux/macOS** too — it’s just Python (your mileage may vary)
+- 🔁 Only tested with **two playlists / two users**
+- 🤔 In theory, more users could be supported — but be careful with edit conflicts
+
+---
